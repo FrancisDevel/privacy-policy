@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Política de Privacidad – Impostor y Civiles</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #0f1117;
+      color: #e0e0e0;
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(135deg, #E74C3C 0%, #8e1e14 100%);
+      padding: 40px 24px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2rem;
+      color: #fff;
+      letter-spacing: 1px;
+    }
+    header p {
+      color: rgba(255,255,255,0.8);
+      margin-top: 8px;
+      font-size: 0.95rem;
+    }
+
+    .lang-tabs {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      padding: 20px;
+      background: #1a1d23;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid #2c3040;
+    }
+    .lang-tab {
+      padding: 8px 28px;
+      border-radius: 20px;
+      cursor: pointer;
+      border: 2px solid #E74C3C;
+      background: transparent;
+      color: #E74C3C;
+      font-weight: bold;
+      font-size: 0.9rem;
+      transition: all 0.2s;
+    }
+    .lang-tab.active, .lang-tab:hover {
+      background: #E74C3C;
+      color: #fff;
+    }
+
+    .content { display: none; max-width: 820px; margin: 0 auto; padding: 40px 24px 80px; }
+    .content.active { display: block; }
+
+    h2 {
+      font-size: 1.3rem;
+      color: #E74C3C;
+      margin: 36px 0 12px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid #2c3040;
+    }
+    h3 {
+      font-size: 1rem;
+      color: #3498DB;
+      margin: 20px 0 8px;
+    }
+    p { margin-bottom: 12px; color: #c8ccd4; }
+    ul { margin: 8px 0 16px 20px; color: #c8ccd4; }
+    ul li { margin-bottom: 6px; }
+
+    .badge {
+      display: inline-block;
+      background: #1e3a2a;
+      color: #27AE60;
+      border: 1px solid #27AE60;
+      border-radius: 6px;
+      padding: 4px 12px;
+      font-size: 0.82rem;
+      font-weight: bold;
+      margin: 4px 4px 4px 0;
+    }
+    .badge.red { background: #3a1e1e; color: #E74C3C; border-color: #E74C3C; }
+
+    .highlight-box {
+      background: #1a2a1a;
+      border-left: 4px solid #27AE60;
+      border-radius: 0 8px 8px 0;
+      padding: 16px 20px;
+      margin: 16px 0;
+    }
+    .highlight-box.info {
+      background: #1a1e2a;
+      border-left-color: #3498DB;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 0.9rem;
+    }
+    .data-table th {
+      background: #1a1d23;
+      color: #E74C3C;
+      padding: 10px 14px;
+      text-align: left;
+      border: 1px solid #2c3040;
+    }
+    .data-table td {
+      padding: 9px 14px;
+      border: 1px solid #2c3040;
+      color: #c8ccd4;
+    }
+    .data-table tr:nth-child(even) td { background: #161920; }
+
+    .contact-box {
+      background: #1a1d23;
+      border: 1px solid #2c3040;
+      border-radius: 10px;
+      padding: 20px 24px;
+      margin-top: 16px;
+    }
+    .contact-box a { color: #3498DB; }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      background: #0f1117;
+      color: #555;
+      font-size: 0.82rem;
+      border-top: 1px solid #1a1d23;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🎭 Impostor y Civiles</h1>
+  <p>Política de Privacidad · Privacy Policy</p>
+</header>
+
+<div class="lang-tabs">
+  <button class="lang-tab active" onclick="switchLang('es')">🇪🇸 Español</button>
+  <button class="lang-tab" onclick="switchLang('en')">🇬🇧 English</button>
+</div>
+
+<!-- ==================== ESPAÑOL ==================== -->
+<div id="content-es" class="content active">
+
+  <p style="margin-top:8px; font-size:0.85rem; color:#666;">
+    Última actualización: <strong id="date-es"></strong>
+  </p>
+
+  <h2>1. Información General</h2>
+  <p>
+    <strong>Impostor y Civiles</strong> es un juego de mesa digital para grupos de amigos y familia,
+    diseñado para ser jugado en un único dispositivo de forma local. Esta política de privacidad
+    describe cómo la aplicación gestiona la información en tu dispositivo.
+  </p>
+
+  <div class="highlight-box">
+    <strong>Resumen en una frase:</strong> Impostor y Civiles <strong>no recopila, no transmite
+    y no comparte ningún dato personal tuyo</strong>. Todo permanece en tu dispositivo.
+  </div>
+
+  <h2>2. Datos que se almacenan localmente</h2>
+  <p>La aplicación guarda únicamente en el almacenamiento local de tu dispositivo:</p>
+
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th>Dato</th>
+        <th>Propósito</th>
+        <th>Dónde se guarda</th>
+        <th>¿Sale del dispositivo?</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Nombres de jugadores</td>
+        <td>Mostrarlos durante la partida</td>
+        <td>Base de datos local (SQLite)</td>
+        <td><span class="badge red">❌ Nunca</span></td>
+      </tr>
+      <tr>
+        <td>Palabras y pistas personalizadas</td>
+        <td>Configurar rondas del juego</td>
+        <td>Base de datos local (SQLite)</td>
+        <td><span class="badge red">❌ Nunca</span></td>
+      </tr>
+      <tr>
+        <td>Configuración del juego</td>
+        <td>Recordar modo, impostores, duración</td>
+        <td>Preferencias del sistema (Preferences API)</td>
+        <td><span class="badge red">❌ Nunca</span></td>
+      </tr>
+      <tr>
+        <td>Preferencia de música</td>
+        <td>Activar/desactivar música</td>
+        <td>Preferencias del sistema (Preferences API)</td>
+        <td><span class="badge red">❌ Nunca</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>3. Datos que NO recopilamos</h2>
+  <p>La aplicación <strong>no recopila en ningún caso</strong>:</p>
+  <ul>
+    <li>Información de identificación personal (nombre real, email, teléfono, dirección)</li>
+    <li>Datos de ubicación</li>
+    <li>Identificadores de dispositivo o publicidad</li>
+    <li>Información de uso, estadísticas o analíticas</li>
+    <li>Datos de cámara, micrófono o contactos</li>
+    <li>Datos financieros o de pago</li>
+    <li>Historial de navegación o de aplicaciones</li>
+  </ul>
+
+  <div class="highlight-box">
+    <span class="badge">✅ Sin internet</span>
+    <span class="badge">✅ Sin anuncios</span>
+    <span class="badge">✅ Sin analíticas</span>
+    <span class="badge">✅ Sin seguimiento</span>
+    <span class="badge">✅ Sin servidores externos</span>
+    <p style="margin-top: 10px; margin-bottom: 0;">
+      La aplicación funciona completamente <strong>offline</strong>. No realiza ninguna
+      conexión a internet ni a servidores de terceros.
+    </p>
+  </div>
+
+  <h2>4. Permisos del dispositivo</h2>
+  <p>La aplicación únicamente solicita los permisos estrictamente necesarios:</p>
+  <ul>
+    <li><strong>Almacenamiento local:</strong> Para guardar la configuración del juego y los jugadores en tu propio dispositivo.</li>
+    <li><strong>Audio:</strong> Para reproducir la música de fondo del juego (gestionado localmente).</li>
+  </ul>
+  <p>No se solicitan permisos de cámara, micrófono, ubicación, contactos ni ningún otro permiso sensible.</p>
+
+  <h2>5. Menores de edad</h2>
+  <p>
+    Impostor y Civiles es un juego apto para todas las edades y puede ser utilizado por menores.
+    Dado que la aplicación <strong>no recopila ningún dato personal</strong> ni requiere registro
+    de cuenta, no existe riesgo de recopilación de datos de menores.
+  </p>
+  <p>
+    Los nombres introducidos para los jugadores son de uso exclusivamente local y temporal;
+    se almacenan solo en el dispositivo y pueden eliminarse en cualquier momento desde la propia
+    aplicación.
+  </p>
+
+  <h2>6. Servicios de terceros</h2>
+  <p>
+    La aplicación <strong>no integra</strong> ningún SDK de terceros que recopile datos, incluyendo:
+  </p>
+  <ul>
+    <li>No usa Google Analytics, Firebase ni ninguna herramienta de analítica</li>
+    <li>No usa redes publicitarias (AdMob, Meta Audience Network, etc.)</li>
+    <li>No usa servicios de autenticación externos (Google Sign-In, Facebook Login, etc.)</li>
+    <li>No usa servicios de crash reporting externos</li>
+  </ul>
+
+  <h2>7. Seguridad de los datos</h2>
+  <p>
+    Los datos almacenados localmente están protegidos por los mecanismos de seguridad propios del
+    sistema operativo Android. El acceso a los datos de la aplicación está restringido al
+    sandbox de la propia app y no es accesible por otras aplicaciones.
+  </p>
+
+  <h2>8. Tus derechos</h2>
+  <p>
+    Puedes eliminar todos los datos almacenados por la aplicación en cualquier momento mediante
+    una de estas opciones:
+  </p>
+  <ul>
+    <li>Desde la propia aplicación: eliminando jugadores y palabras una a una.</li>
+    <li>Desde Ajustes de Android → Aplicaciones → Impostor y Civiles → Almacenamiento → Borrar datos.</li>
+    <li>Desinstalando la aplicación (se eliminan todos los datos automáticamente).</li>
+  </ul>
+
+  <h2>9. Cambios en esta política</h2>
+  <p>
+    Si en el futuro se realizan cambios que afecten a la privacidad (por ejemplo, la inclusión
+    de publicidad o analíticas), esta política se actualizará y se notificará mediante una
+    actualización de la aplicación en Google Play Store.
+  </p>
+
+  <h2>10. Contacto</h2>
+  <div class="contact-box">
+    <p>Si tienes alguna pregunta sobre esta política de privacidad, puedes contactarnos en:</p>
+    <p>📧 <strong>Correo electrónico:</strong> <a href="mailto:cleanwhatdevelopment@hotmail.com">cleanwhatdevelopment@hotmail.com</a></p>
+    <p style="margin-top: 8px; color: #888; font-size: 0.88rem;">
+      Responderemos en un plazo máximo de 30 días.
+    </p>
+  </div>
+
+</div>
+
+<!-- ==================== ENGLISH ==================== -->
+<div id="content-en" class="content">
+
+  <p style="margin-top:8px; font-size:0.85rem; color:#666;">
+    Last updated: <strong id="date-en"></strong>
+  </p>
+
+  <h2>1. General Information</h2>
+  <p>
+    <strong>Impostor y Civiles</strong> is a digital party game for groups of friends and family,
+    designed to be played locally on a single device. This privacy policy describes how the
+    application manages information on your device.
+  </p>
+
+  <div class="highlight-box">
+    <strong>Summary in one sentence:</strong> Impostor y Civiles <strong>does not collect,
+    transmit, or share any personal data</strong>. Everything stays on your device.
+  </div>
+
+  <h2>2. Data Stored Locally</h2>
+  <p>The application only saves the following data to your device's local storage:</p>
+
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th>Data</th>
+        <th>Purpose</th>
+        <th>Where stored</th>
+        <th>Leaves device?</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Player names</td>
+        <td>Display them during the game</td>
+        <td>Local database (SQLite)</td>
+        <td><span class="badge red">❌ Never</span></td>
+      </tr>
+      <tr>
+        <td>Custom words and hints</td>
+        <td>Configure game rounds</td>
+        <td>Local database (SQLite)</td>
+        <td><span class="badge red">❌ Never</span></td>
+      </tr>
+      <tr>
+        <td>Game settings</td>
+        <td>Remember mode, impostors, duration</td>
+        <td>System preferences (Preferences API)</td>
+        <td><span class="badge red">❌ Never</span></td>
+      </tr>
+      <tr>
+        <td>Music preference</td>
+        <td>Enable/disable background music</td>
+        <td>System preferences (Preferences API)</td>
+        <td><span class="badge red">❌ Never</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>3. Data We Do NOT Collect</h2>
+  <p>The application <strong>never collects</strong>:</p>
+  <ul>
+    <li>Personally identifiable information (real name, email, phone, address)</li>
+    <li>Location data</li>
+    <li>Device or advertising identifiers</li>
+    <li>Usage data, statistics, or analytics</li>
+    <li>Camera, microphone, or contacts data</li>
+    <li>Financial or payment information</li>
+    <li>Browsing history or app usage history</li>
+  </ul>
+
+  <div class="highlight-box">
+    <span class="badge">✅ No internet</span>
+    <span class="badge">✅ No ads</span>
+    <span class="badge">✅ No analytics</span>
+    <span class="badge">✅ No tracking</span>
+    <span class="badge">✅ No external servers</span>
+    <p style="margin-top: 10px; margin-bottom: 0;">
+      The application works entirely <strong>offline</strong>. It makes no connections to
+      the internet or any third-party servers.
+    </p>
+  </div>
+
+  <h2>4. Device Permissions</h2>
+  <p>The application only requests strictly necessary permissions:</p>
+  <ul>
+    <li><strong>Local storage:</strong> To save game settings and player names on your own device.</li>
+    <li><strong>Audio:</strong> To play background music during the game (managed locally).</li>
+  </ul>
+  <p>No camera, microphone, location, contacts, or other sensitive permissions are requested.</p>
+
+  <h2>5. Children</h2>
+  <p>
+    Impostor y Civiles is suitable for all ages and may be used by children. Since the application
+    <strong>does not collect any personal data</strong> and requires no account registration,
+    there is no risk of collecting data from minors.
+  </p>
+  <p>
+    Player names entered in the app are used exclusively for local, in-session purposes. They are
+    stored only on the device and can be deleted at any time from within the application.
+  </p>
+
+  <h2>6. Third-Party Services</h2>
+  <p>
+    The application <strong>does not integrate</strong> any data-collecting third-party SDKs, including:
+  </p>
+  <ul>
+    <li>No Google Analytics, Firebase, or any analytics tool</li>
+    <li>No advertising networks (AdMob, Meta Audience Network, etc.)</li>
+    <li>No external authentication services (Google Sign-In, Facebook Login, etc.)</li>
+    <li>No external crash reporting services</li>
+  </ul>
+
+  <h2>7. Data Security</h2>
+  <p>
+    Locally stored data is protected by Android's built-in security mechanisms. Access to
+    application data is restricted to the app's own sandbox and is not accessible by other
+    applications.
+  </p>
+
+  <h2>8. Your Rights</h2>
+  <p>
+    You can delete all data stored by the application at any time by:
+  </p>
+  <ul>
+    <li>Within the app: by deleting players and words individually.</li>
+    <li>Android Settings → Apps → Impostor y Civiles → Storage → Clear Data.</li>
+    <li>Uninstalling the application (all data is automatically deleted).</li>
+  </ul>
+
+  <h2>9. Changes to This Policy</h2>
+  <p>
+    If future changes affect privacy (e.g., introduction of advertising or analytics), this
+    policy will be updated and users will be notified through an app update on Google Play Store.
+  </p>
+
+  <h2>10. Contact</h2>
+  <div class="contact-box">
+    <p>If you have any questions about this privacy policy, you can contact us at:</p>
+    <p>📧 <strong>Email:</strong> <a href="mailto:fjcode.dev@gmail.com">fjcode.dev@gmail.com</a></p>
+    <p style="margin-top: 8px; color: #888; font-size: 0.88rem;">
+      We will respond within 30 days.
+    </p>
+  </div>
+
+</div>
+
+<footer>
+  © <span id="year"></span> Impostor y Civiles · fjcode.dev · Todos los derechos reservados / All rights reserved
+</footer>
+
+<script>
+  function switchLang(lang) {
+    document.querySelectorAll('.content').forEach(el => el.classList.remove('active'));
+    document.querySelectorAll('.lang-tab').forEach(el => el.classList.remove('active'));
+    document.getElementById('content-' + lang).classList.add('active');
+    event.target.classList.add('active');
+  }
+
+  const now = new Date();
+  const formatted = now.toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' });
+  const formattedEn = now.toLocaleDateString('en-GB', { year: 'numeric', month: 'long', day: 'numeric' });
+  document.getElementById('date-es').textContent = formatted;
+  document.getElementById('date-en').textContent = formattedEn;
+  document.getElementById('year').textContent = now.getFullYear();
+</script>
+
+</body>
+</html>
